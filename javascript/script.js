@@ -6,7 +6,7 @@ function initMap() {
           zoom: 17,
           center: uluru
     });
-    var image = "images/filmReel.png";
+    var image = "images/googleMarker.png";
     var marker = new google.maps.Marker({
         position: uluru,
         map: map,
