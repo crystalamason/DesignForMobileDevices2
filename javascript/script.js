@@ -6,7 +6,7 @@ function initMap() {
           zoom: 17,
           center: uluru
     });
-    var image = "https://crystalamason.github.io/DesignForMobileDevices2/images/filmReel";
+    var image = "images/filmReel.png";
     var marker = new google.maps.Marker({
         position: uluru,
         map: map,
