@@ -1,6 +1,6 @@
 /* CSS */
 
-#mapStafford{
+#mapStafford, #mapStoke, #mapTamworth{
     width: 400px;
     height: 400px;
 }
