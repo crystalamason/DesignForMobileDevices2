@@ -1,11 +1,12 @@
 /* CSS */
 
-#mapStafford, #mapStoke, #mapTamworth{
+#mapStafford, #mapStoke, #mapTamworth, #whereAmI{
     width: 400px;
     height: 400px;
 }
 
+/*
 #whereAmI{
     width: 40%;
     height: 400px;
-}
+}*/
