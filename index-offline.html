@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Reel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/bulma.css">
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    
+    <body>
+        <section class="hero is-primary is-medium">
+            <div class="hero-head">
+                <header class="nav">
+                    <div class="container">
+                        <div class="nav-left">
+                            <a class="nav-item">
+                                <p>You are currently offline</p>
+<!--                                <img src="images/logo.jpg" alt="Logo" width="100" height="50">-->
+                            </a>
+                        </div>
+                        <span id="nav-toggle" class="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('is-active');">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <div id="nav-menu" class="nav-right nav-menu">
+                            <a class="nav-item is-active" href="index.html">Home</a>
+                            <a class="nav-item" href="films.html">Films</a>
+                            <a class="nav-item" href="offersPromotions.html">Offers + Promotions</a>
+                            <a class="nav-item" href="cinemas.html">Cinemas</a>
+                            <a class="nav-item" href="myBookings.html">My Bookings</a>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title">Reel</h1>
+                    <h2 class="subtitle">The latest films all in one place</h2>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <h2 class="subtitle has-text-centered">Quick Bookings</h2>
+                <div class="field">
+                    <label class="label">Cinema</label>
+                    <p class="control">
+                        <span class="select">
+                            <select>
+                                <option>Select dropdown</option>
+                                <option>Stoke-on-Trent</option>
+                                <option>Stafford</option>
+                                <option>Tamworth</option>
+                            </select>
+                        </span>
+                    </p>
+                </div>
+                
+                <div class="field">
+                    <label class="label">Films</label>
+                    <p class="control">
+                        <span class="select">
+                            <select>
+                                <option>Select dropdown</option>
+                                <option>Beauty and the Beast</option>
+                                <option>Boss Baby</option>
+                                <option>Fast and Furious 8</option>
+                                <option>Get Out</option>
+                                <option>Going in Style</option>
+                                <option>The Zookeeper's Wife</option>
+                                <option>Their Finest</option>
+                                <option>Unforgettable</option>
+                            </select>
+                        </span>
+                    </p>
+                </div>
+                
+                <div class="field">
+                    <label class="label">Date</label>
+                    <p class="control">
+                        <input class="input" type="date" name="date">
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control">
+                        <button class="button is-primary">Submit</button>
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <p>Website developed by Crystal Mason</p>
+                </div>
+            </div>
+        </footer>
+        <script src="serviceworker.js"></script>
+        <script src="javascript/bulma.js"></script>
+        <script src="javascript/jquery-2.2.0.min.js"></script>
+    </body>
+    
+</html>
