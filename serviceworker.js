@@ -21,12 +21,12 @@ var CACHED_URLS = [
     
     //Images for favicons
     BASE_PATH + 'images/favicon/android-icon-36x36.png',
-    BASE_PATH + 'images/favicon/images/favicon/android-icon-48x48.png',
+    BASE_PATH + 'images/favicon/android-icon-48x48.png',
     BASE_PATH + 'images/favicon/android-icon-72x72.png',
     BASE_PATH + 'images/favicon/android-icon-96x96.png',
     BASE_PATH + 'images/favicon/android-icon-144x144.png',
     BASE_PATH + 'images/favicon/android-icon-192x192.png',
-    BASE_PATH + 'images/favicon/apple-icon',
+    BASE_PATH + 'images/favicon/apple-icon.png',
     BASE_PATH + 'images/favicon/apple-icon-57x57.png',
     BASE_PATH + 'images/favicon/apple-icon-60x60.png',
     BASE_PATH + 'images/favicon/apple-icon-72x72.png',
@@ -36,15 +36,14 @@ var CACHED_URLS = [
     BASE_PATH + 'images/favicon/apple-icon-144x144.png',
     BASE_PATH + 'images/favicon/apple-icon-152x152.png',
     BASE_PATH + 'images/favicon/apple-icon-180x180.png',
-    BASE_PATH + 'images/favicon/apple-icon-preco-mposed',
-    BASE_PATH + 'images/favicon/favicon.png',
+    BASE_PATH + 'images/favicon/apple-icon-preco-mposed.png',
     BASE_PATH + 'images/favicon/favicon-16x16.png',
     BASE_PATH + 'images/favicon/favicon-32x32.png',
     BASE_PATH + 'images/favicon/favicon-96x96.png',
     BASE_PATH + 'images/favicon/ms-icon-70x70.png',
     BASE_PATH + 'images/favicon/ms-icon-144x144.png',
     BASE_PATH + 'images/favicon/ms-icon-150x150.png',
-    BASE_PATH + 'images/favicon/ms-icon-310x310',
+    BASE_PATH + 'images/favicon/ms-icon-310x310.png',
     
     //Images for pages
     
