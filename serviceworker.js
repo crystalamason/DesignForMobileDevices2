@@ -36,7 +36,7 @@ var CACHED_URLS = [
     BASE_PATH + 'images/favicon/apple-icon-144x144.png',
     BASE_PATH + 'images/favicon/apple-icon-152x152.png',
     BASE_PATH + 'images/favicon/apple-icon-180x180.png',
-    BASE_PATH + 'images/favicon/apple-icon-preco-mposed.png',
+    BASE_PATH + 'images/favicon/apple-icon-precomposed.png',
     BASE_PATH + 'images/favicon/favicon-16x16.png',
     BASE_PATH + 'images/favicon/favicon-32x32.png',
     BASE_PATH + 'images/favicon/favicon-96x96.png',
