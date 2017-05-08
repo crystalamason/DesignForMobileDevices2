@@ -1,3 +1,15 @@
+self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    fetch(event.request).catch(function() {
+      return new Response(
+        'Welcome to Reel \n'+        
+'There seems to be a problem with your connection.\n'+        
+'We look forward to telling you about the latest films as soon as you are online'
+      );
+    })
+  );
+});
+
 var BASE_PATH = '/DesignForMobileDevices2/';
 var CACHE_NAME = 'gih-cache';
 var TEMP_IMAGE_CACHE_NAME = 'temp-cache-v1'
@@ -81,18 +93,6 @@ self.addEventListener('fetch', function(event) {
       })
     );
   }
-});
-
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    fetch(event.request).catch(function() {
-      return new Response(
-        'Welcome to Reel \n'+        
-'There seems to be a problem with your connection.\n'+        
-'We look forward to telling you about the latest films as soon as you are online'
-      );
-    })
-  );
 });
 
 
