@@ -44,6 +44,14 @@ var CACHED_URLS = [
     BASE_PATH + 'images/favicon/ms-icon-310x310.png',
     
     //Images for pages
+    BASE_PATH + 'images/beautyAndTheBeast140x220.jpg',
+    BASE_PATH + 'images/bossBaby140x220.jpg',
+    BASE_PATH + 'images/fastAndFurious8140x220.jpg',
+    BASE_PATH + 'images/getOut140x220.jpg',
+    BASE_PATH + 'images/goingInStyle140x220.jpg',
+    BASE_PATH + 'images/theirFinest140x220.jpg',
+    BASE_PATH + 'images/theZookeepersWife140x220.jpg',
+    BASE_PATH + 'images/unforgettable140x220.jpg',
     
     //JavaScript
     BASE_PATH + 'javascript/bulma.js',
@@ -75,6 +83,18 @@ self.addEventListener('fetch', function(event) {
         return cache.match('index.html').then(function(cachedResponse) {
           var fetchPromise = fetch('index.html').then(function(networkResponse) {
             cache.put('index.html', networkResponse.clone());
+            return networkResponse;
+          });
+          return cachedResponse || fetchPromise;
+        });
+      })
+    );
+      } else if (requestURL.pathname === BASE_PATH + 'films.html') {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(function(cache) {
+        return cache.match('films.html').then(function(cachedResponse) {
+          var fetchPromise = fetch('films.html').then(function(networkResponse) {
+            cache.put('films.html', networkResponse.clone());
             return networkResponse;
           });
           return cachedResponse || fetchPromise;
