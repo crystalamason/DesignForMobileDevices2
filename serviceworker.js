@@ -113,6 +113,18 @@ self.addEventListener('fetch', function(event) {
         });
       })
     );
+                    } else if (requestURL.pathname === BASE_PATH + 'myBookings.html') {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(function(cache) {
+        return cache.match('myBookings.html').then(function(cachedResponse) {
+          var fetchPromise = fetch('myBookings.html').then(function(networkResponse) {
+            cache.put('myBookings.html', networkResponse.clone());
+            return networkResponse;
+          });
+          return cachedResponse || fetchPromise;
+        });
+      })
+    );
        } else if (
     CACHED_URLS.includes(requestURL.href) ||
     CACHED_URLS.includes(requestURL.pathname)
