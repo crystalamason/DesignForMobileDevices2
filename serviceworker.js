@@ -1,17 +1,3 @@
-
-
-//self.addEventListener('fetch', function(event) {
-//  event.respondWith(
-//    fetch(event.request).catch(function() {
-//      return new Response(
-//        'Welcome to Reel \n'+        
-//'There seems to be a problem with your connection.\n'+        
-//'We look forward to telling you about the latest films as soon as you are online'
-//      );
-//    })
-//  );
-//});
-
 var BASE_PATH = '/DesignForMobileDevices2/';
 var CACHE_NAME = 'gih-cache';
 var TEMP_IMAGE_CACHE_NAME = 'temp-cache-v1'
@@ -68,33 +54,6 @@ self.addEventListener('install', function(event) {
   );
 });
 
-//self.addEventListener('fetch', function(event) {
-//  var requestURL = new URL(event.request.url);
-//  if (requestURL.pathname === 'index.html') {
-//    event.respondWith(
-//      caches.open(CACHE_NAME).then(function(cache) {
-//        return cache.match('index.html').then(function(cachedResponse) {
-//          var fetchPromise = fetch('index.html').then(function(networkResponse) {
-//            cache.put('index.html', networkResponse.clone());
-//            return networkResponse;
-//          });
-//          return cachedResponse || fetchPromise;
-//        });
-//      })
-//    );
-//  } else if (
-//    CACHED_URLS.includes(requestURL.href) ||
-//    CACHED_URLS.includes(requestURL.pathname) {
-//    event.respondWith(
-//      caches.open(CACHE_NAME).then(function(cache) {
-//        return cache.match(event.request).then(function(response) {
-//          return response || fetch(event.request);
-//        })
-//      })
-//    );
-//  }
-//});
-
 self.addEventListener('fetch', function(event) {
   var requestURL = new URL(event.request.url);
   // Handle requests for index.html
@@ -122,6 +81,18 @@ self.addEventListener('fetch', function(event) {
       })
     );
   }
+});
+
+self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    fetch(event.request).catch(function() {
+      return new Response(
+        'Welcome to Reel \n'+        
+'There seems to be a problem with your connection.\n'+        
+'We look forward to telling you about the latest films as soon as you are online'
+      );
+    })
+  );
 });
 
 
