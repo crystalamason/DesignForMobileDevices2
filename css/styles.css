@@ -5,6 +5,10 @@
     height: 400px;
 }
 
+.hero.is-primary .hero-head a.nav-item{
+    color: white;   
+}
+
 /*
 #whereAmI{
     width: 40%;
