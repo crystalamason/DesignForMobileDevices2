@@ -9,6 +9,10 @@
     color: white;   
 }
 
+.hero.is-primary .hero-head a.nav-item.is-active{
+    text-decoration: underline;   
+}
+
 .hero-foot ul li a{
     color: white;   
 }
