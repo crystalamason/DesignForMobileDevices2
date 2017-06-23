@@ -6615,12 +6615,10 @@ label.panel-block:hover {
   }
 }
 
-/*
 .hero.is-primary a.nav-item,
 .hero.is-primary .nav-item a:not(.button) {
   color: rgba(255, 255, 255, 0.7);
 }
-*/
 
 .hero.is-primary a.nav-item:hover, .hero.is-primary a.nav-item.is-active,
 .hero.is-primary .nav-item a:not(.button):hover,
